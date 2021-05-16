@@ -25,6 +25,20 @@ h1,p,h5{
   background:linear-gradient(135deg, rgba(228,250,255,0.9) 25%, rgba(228,250,255,0.2) 52%, rgba(25, 22, 194, 0.1) 70%);
   z-index: 5;
 }
+@media (max-width: 560px) {
+  .card {
+    background-size: auto 600px;
+  }
+  .card-cover{
+    background:linear-gradient(135deg, rgba(228,250,255,0.9) 25%, rgba(228,250,255,0.2) 72%, rgba(25, 22, 194, 0.1) 80%);
+  }
+}
 .card-body{
   z-index: 10;
+}
+.copy-link{
+  cursor: pointer;
+}
+.new-link{
+  display: none;
 }
