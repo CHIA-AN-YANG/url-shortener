@@ -1,11 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  form(action="/" method="post")
-    input(type="url" name="inputlink" required)
-    button(type="submit") submit
+  .card 
+    .card-cover
+    .card-body
+      h1 Link Shortener
+      p Make your link shorter and cleaner!
+      form(action="/" method="post")
+        .form-row.mb-2
+          input.mr-2(type="url" name="inputlink" required)
+          button.btn.btn-secondary(type="submit") submit
 
-  p New Link:&nbsp;
-    span #{newLink}
+      h5 
+        img.mb-1(class="copy-link" src="/images/copylink.svg")
+        | &nbsp;New Link: 
+        a(href=newLink)
+          span #{newLink}
+          
+
+

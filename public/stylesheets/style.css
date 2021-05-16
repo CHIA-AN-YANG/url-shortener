@@ -6,3 +6,25 @@ body {
 a {
   color: #00B7FF;
 }
+h1,p,h5{
+  color: #1916c2;
+}
+.card{
+  background-image:url('https://www.west-crete.com/images/mountains/white-mountains-winter-80.jpg');
+  background-size: 100% auto;
+  background-position-y: 10%;
+  overflow: hidden;
+}
+.card-cover{
+  position: absolute;
+  height: 120%;
+  width: 120%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:linear-gradient(135deg, rgba(228,250,255,0.9) 25%, rgba(228,250,255,0.2) 52%, rgba(25, 22, 194, 0.1) 70%);
+  z-index: 5;
+}
+.card-body{
+  z-index: 10;
+}
