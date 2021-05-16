@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/" method="post")
+    input(type="url" name="inputlink")
+
+  p New Link:&nbsp;
+    span #{newlink}
