@@ -12,9 +12,8 @@ router.post('/', (req, res) => {
   //防止有重覆的網址組合出現
   const inputlink = req.body.inputlink
   let i = generateString(5)
-  let linkArr = Link.find().lean()
-  while(routerMatch(linkArr,i)){i = generateString(5)}
-
+  while(Link.findOne({newRouter: i}).exec()){i = generateString(5)}
+  
   const newLink = `${herokuLink}link/${i}`
   return Link.create({ inputlink, newRouter:i })
   .then(() => {    
