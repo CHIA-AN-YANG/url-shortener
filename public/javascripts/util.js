@@ -1,7 +1,6 @@
-// program to generate random strings
-// declare all characters
-const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
+// program to generate random strings
+const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 function generateString(length) {
     let result = ' ';
     const charactersLength = characters.length;
@@ -11,10 +10,11 @@ function generateString(length) {
     return result;
 }
 
-function routerMatch(Arr, router){
+//check if router matches existing link
+function routerMatch(Arr, router) {
     let flag = false
     for(item in Arr){if(item['newRouter'] == router){flag = true}}
     return flag
-  }
+}
 
 module.exports={ generateString, routerMatch }

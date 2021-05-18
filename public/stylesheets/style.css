@@ -4,10 +4,19 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #157499;
 }
 h1,p,h5{
   color: #1916c2;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+}
+.btn-generate {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+}
+p{
+  font-weight: 500;
 }
 .card{
   background-image:url('https://www.west-crete.com/images/mountains/white-mountains-winter-80.jpg');
@@ -39,6 +48,8 @@ h1,p,h5{
 .copy-link{
   cursor: pointer;
 }
-.new-link{
-  display: none;
+.input-newlink{
+  opacity:0;
+  height: 1px;
 }
+

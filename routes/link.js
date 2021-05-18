@@ -8,7 +8,7 @@ router.get('/:link', (req, res) => {
   Link.find()
   .lean()
   .then(data => {
-    return data.find(el => el.newRouter.toString()===link.toString())
+    return data.find(el => el.newRouter.toString() === link.toString())
   })
   .then(dataEl => res.redirect(`${dataEl.inputlink}`))
 

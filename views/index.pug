@@ -9,14 +9,14 @@ block content
       form(action="/" method="post")
         .form-row.mb-2
           input.mr-2(type="url" name="inputlink" required)
-          button.btn.btn-secondary(type="submit") generate
+          button.btn.btn-secondary.btn-generate(type="submit") generate
 
       h5 
-        img.mb-1.mr-3.copy-link(src="/images/copylink.svg")
         | New Link: 
-        a(href=newLink) #{newLink}
-        form
-          input.new-link(value=newLink)
+        a(href=newLink) #{newLink}&nbsp;
+        img.mb-1.mr-3.copy-link(src="/images/copylink.svg" title="click this icon to copy link.")
+      
+      input.input-newlink(value=newLink)
 
 
           

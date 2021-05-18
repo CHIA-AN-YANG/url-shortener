@@ -6,7 +6,7 @@ const { generateString, routerMatch } = require('../public/javascripts/util')
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'url shortener' });
 });
 router.post('/', (req, res) => {
   //防止有重覆的網址組合出現
@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
   return Link.create({ inputlink, newRouter:i })
   .then(() => {    
     newRouter = i
-    res.render('index', { title: 'Express', newLink })
+    res.render('index', { title: 'url shortener', newLink })
   }) 
   .catch(error => console.log(error))
 })
